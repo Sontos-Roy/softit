@@ -434,9 +434,7 @@ body{
 
 /* for Category section  */
 .filter-wiget{
-    display: none;
-    background-color: white;
-    max-height: 60vh;
+
 }
 .sort-select, .sort-options{
     margin-top: -18px;
@@ -469,7 +467,10 @@ body{
     width: 90%;
     position: absolute;
     left: 5%;
-    margin-top: 40px;
+    margin-top: 60px;
+    display: none;
+    background-color: white;
+    max-height: 60vh;
 }
 .filter-wigetcol div a{
     font-size: 12px;
