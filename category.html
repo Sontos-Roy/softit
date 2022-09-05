@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polo Golf & Ralph Lauren: Golf Clothing | Ralph Lauren</title>
@@ -14,6 +11,19 @@
     <style>
       .navbar-nav .nav-item .nav-link:hover>.dropdown{
         display: block;
+      }
+      .navbar{
+        background-color: white;
+        color: black;
+      }
+      .navbar .navbar-brand{
+        color: black;
+      }
+      .navbar-nav .nav-item .nav-link{
+        color: black;
+      }
+      .icons a{
+        color: black;
       }
     </style>
 </head>
@@ -1174,167 +1184,284 @@
           </nav>
 
     </header>
-    <section id="banner" class="p-0 m-0">
-      <div id="coversection" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-bs-target="#coversection" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#coversection" data-bs-slide-to="1"></li>
-          <li data-bs-target="#coversection" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner header-carousel">
-          <div class="carousel-item active">
-            <img src="assets/img/0823_hp_c07_img.jpg" class="d-block w-100" alt="Product">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    <!-- Header end  -->
+
+    <!-- cover start  -->
+    <section>
+        <h2 class="serif text-center pt-5 pb-5 mt-5">Country Shop</h2>
+        <div class="container">
+          <div class="filter d-flex justify-content-between">
+            <div class="d-flex justify-content-between"><p class="nav-link" id="filter">Filter <i class="fas fa-sort-down"></i></p>
+              <div class="filter-wiget sticky-top" style="z-index: 9999999; position: sticky; top: 80px;">
+                <div class="col-12 row filter-wigetcol">
+                  <div class="col-12 tags-r pt-4 d-block d-lg-none d-md-block">
+                      <button class="btn btn-light btn-sm m-2">Sweaters <i class="fa-solid fa-xmark"></i></button>
+                      <button class="btn btn-light btn-sm m-2">Sweaters <i class="fa-solid fa-xmark"></i></button>
+                      <button class="btn btn-light btn-sm m-2">Sweaters <i class="fa-solid fa-xmark"></i></button>
+                      <a href="#" class="text-dark ps-3 m-2">Clear all</a>
+                  </div>
+                  <div class="col-lg-7 col-md-12 mt-5 row filter-wigetcol">
+                    <h4 class="serif">Category</h4>
+
+                    <div class="col-lg-6">
+                      <a href="#" class="a-herf text-dark">
+                        <input type="checkbox" id="polo-shirts" name="polo-shirts" value="polo-shirts">
+                        <label for="polo-shirts"> Polo Shirts (4)</label>
+                      </a><br>
+                      <a href="#" class="a-herf text-dark">
+                        <input type="checkbox" id="sweaters" name="sweaters" value="sweaters">
+                        <label for="sweaters"> Sweaters (11)</label>
+                      </a><br>
+                      <a href="#" class="a-herf text-dark">
+                        <input type="checkbox" id="T-Shirts" name="T-Shirts" value="T-Shirts">
+                        <label for="T-Shirts"> T-shirts (20)</label>
+                      </a><br>
+                      <a href="#" class="a-herf text-dark">
+                        <input type="checkbox" id="Jackets" name="Jackets" value="Jackets">
+                        <label for="Jackets"> Jackets, Coats & Vests (14)</label>
+                      </a><br>
+                      <a href="#" class="a-herf text-dark">
+                        <input type="checkbox" id="Casual-Shirts" name="Casual-Shirts" value="Casual-Shirtshadow">
+                        <label for="Casual-Shirts"> Casual Shirts (23)</label>
+                      </a><br>
+                      <a href="#" class="a-herf text-dark">
+                        <input type="checkbox" id=" Sweatshirts" name=" Sweatshirts" value=" Sweatshirts">
+                        <label for=" Sweatshirts">  Sweatshirts (6)</label>
+                      </a><br>
+                    </div>
+                    <div class="col-lg-6">
+                      <a href="#" class="a-herf text-dark">
+                        <input type="checkbox" id="Pants" name="Pants" value="Pants">
+                        <label for="Pants">  Pants (1)</label>
+                      </a><br>
+                      <a href="#" class="a-herf text-dark">
+                        <input type="checkbox" id="Socks" name="Socks" value="Socks">
+                        <label for="Socks"> Socks (4)</label>
+                      </a><br>
+                      <a href="#" class="a-herf text-dark">
+                        <input type="checkbox" id="Jeans" name="Jeans" value="Jeans">
+                        <label for="Jeans"> Jeans (12)</label>
+                      </a><br>
+                      <a href="#" class="a-herf text-dark">
+                        <input type="checkbox" id="Shoes" name="Shoes" value="Shoes">
+                        <label for="Shoes"> Shoes (7)</label>
+                      </a><br>
+                      <a href="#" class="a-herf text-dark">
+                        <input type="checkbox" id="Hats" name="Hats" value="Hats">
+                        <label for="Hats">  Hats, Scarves & Gloves (11)</label>
+                      </a><br>
+                      <a href="#" class="a-herf text-dark">
+                        <input type="checkbox" id="Ties" name="Ties" value="Ties">
+                        <label for="Ties">
+                          Ties, Bow Ties & Pocket Squares (1)</label>
+                      </a><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-12 mt-5">
+                    <h4 class="serif">Size</h4>
+                    <a href="#" class="a-herf text-dark">
+                      <input type="checkbox" id="XS" name="XS" value="XS">
+                      <label for="XS"> XS (6)</label>
+                    </a><br>
+                    <a href="#" class="a-herf text-dark">
+                      <input type="checkbox" id="S" name="S" value="S">
+                      <label for="S"> S (4)</label>
+                    </a><br>
+                    <a href="#" class="a-herf text-dark">
+                      <input type="checkbox" id="M" name="M" value="M">
+                      <label for="M"> M (3)</label>
+                    </a><br>
+                    <a href="#" class="a-herf text-dark">
+                      <input type="checkbox" id="L" name="L" value="L">
+                      <label for="L"> L (3)</label>
+                    </a><br>
+                    <a href="#" class="a-herf text-dark">
+                      <input type="checkbox" id="XL" name="XL" value="XL">
+                      <label for="XL"> XL (3)</label>
+                    </a><br>
+                    <a href="#" class="a-herf text-dark">
+                      <input type="checkbox" id="XXL" name="XXL" value="XXL">
+                      <label for="XXL"> XXL (3)</label>
+                    </a><br>
+
+                  </div>
+                  <div class="col-lg-3 col-md-12 mt-5">
+                    <h4 class="serif">Price</h4>
+                    <a href="#" class="a-herf text-dark">
+                      <input type="checkbox" id="50" name="50" value="50">
+                      <label for="50"> $50 - $100 (6)</label>
+                    </a><br>
+                    <a href="#" class="a-herf text-dark">
+                      <input type="checkbox" id="100" name="100" value="100">
+                      <label for="100"> $100 - $150 (4)</label>
+                    </a><br>
+                    <a href="#" class="a-herf text-dark">
+                      <input type="checkbox" id="150" name="150" value="150">
+                      <label for="150"> $150 - $200 (3)</label>
+                    </a><br>
+                    <a href="#" class="a-herf text-dark">
+                      <input type="checkbox" id="200" name="200" value="200">
+                      <label for="200"> $200 - $250 (3)</label>
+                    </a><br>
+                    <a href="#" class="a-herf text-dark">
+                      <input type="checkbox" id="250" name="250" value="250">
+                      <label for="250"> $250 - $300 (3)</label>
+                    </a><br>
+                    <a href="#" class="a-herf text-dark">
+                      <input type="checkbox" id="300" name="300" value="300">
+                      <label for="300"> $300 - $1000 (1)  </label>
+                    </a><br>
+                  </div>
+                </div>
+                <div class="text-end col-12">
+                  <button class="btn btn-primary">Apply (20)</button>
+                </div>
+              </div>
+              <div class="tags ps-4 d-none d-lg-block d-md-none">
+                <button class="btn btn-light btn-sm">Sweaters <i class="fa-solid fa-xmark"></i></button>
+                <button class="btn btn-light btn-sm">Sweaters <i class="fa-solid fa-xmark"></i></button>
+                <a href="#" class="text-dark ps-3">Clear all</a>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="sortby d-none d-lg-block d-md-none">SORT BY</p>
+              <select name="" id="" class="sort-select">
+                <option value="1">New Arrivals</option>
+                <option value="2">Best Sellers</option>
+                <option value="3">Top Rated</option>
+                <option value="4">Price Low to High</option>
+                <option value="5">Price High to Low</option>
+                <option value="6">Our Favorites</option>
+              </select>
+              <div class="sort-options d-lg-block d-md-none d-none">
+
+                <button class="btn"><i class="fas fa-th-large"></i></button>
+                <button class="btn"><i class="fas fa-th"></i></button>
+
+              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="assets/img/0823_hp_c07_img.jpg" class="d-block w-100" alt="">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="products row pt-4">
+            <div class="col-lg-3 col-md-4 col-12 font-sm pt-3">
+              <a href="#" class="text-dark a-herf">
+                <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+              <span class="p-0">Polo Ralph Lauren</span><br>
+              <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
+              <span class="p-0"><del>$120</del> $100</span>
+              </a>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/0823_hp_c07_img.jpg" class="d-block w-100" alt="">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <div class="col-lg-3 col-md-4 col-12 font-sm pt-3">
+              <a href="#" class="text-dark a-herf">
+                <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+              <span class="p-0">Polo Ralph Lauren</span><br>
+              <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
+              <span class="p-0"><del>$120</del> $100</span>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 font-sm pt-3">
+              <a href="#" class="text-dark a-herf">
+                <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+              <span class="p-0">Polo Ralph Lauren</span><br>
+              <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
+              <span class="p-0"><del>$120</del> $100</span>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 font-sm pt-3">
+              <a href="#" class="text-dark a-herf">
+                <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+              <span class="p-0">Polo Ralph Lauren</span><br>
+              <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
+              <span class="p-0"><del>$120</del> $100</span>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 font-sm pt-3">
+              <a href="#" class="text-dark a-herf">
+                <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+              <span class="p-0">Polo Ralph Lauren</span><br>
+              <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
+              <span class="p-0"><del>$120</del> $100</span>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 font-sm pt-3">
+              <a href="#" class="text-dark a-herf">
+                <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+              <span class="p-0">Polo Ralph Lauren</span><br>
+              <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
+              <span class="p-0"><del>$120</del> $100</span>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 font-sm pt-3">
+              <a href="#" class="text-dark a-herf">
+                <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+              <span class="p-0">Polo Ralph Lauren</span><br>
+              <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
+              <span class="p-0"><del>$120</del> $100</span>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 font-sm pt-3">
+              <a href="#" class="text-dark a-herf">
+                <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+              <span class="p-0">Polo Ralph Lauren</span><br>
+              <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
+              <span class="p-0"><del>$120</del> $100</span>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 font-sm pt-3">
+              <a href="#" class="text-dark a-herf">
+                <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+              <span class="p-0">Polo Ralph Lauren</span><br>
+              <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
+              <span class="p-0"><del>$120</del> $100</span>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 font-sm pt-3">
+              <a href="#" class="text-dark a-herf">
+                <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+              <span class="p-0">Polo Ralph Lauren</span><br>
+              <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
+              <span class="p-0"><del>$120</del> $100</span>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 font-sm pt-3">
+              <a href="#" class="text-dark a-herf">
+                <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+              <span class="p-0">Polo Ralph Lauren</span><br>
+              <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
+              <span class="p-0"><del>$120</del> $100</span>
+              </a>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#coversection" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-circle-chevron-left"></i></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#coversection" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-circle-chevron-right"></i></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-      </div>
-      <!-- <div class="text-center cover">
-        <img src="assets/svg/2022_womens_polo_logo_white.svg" alt="Text">
-        <p class="small-text serif white pt-4">Discover the new Polo ID handbag collection</p>
-        <a href="#" class="a-herf white">Explore Now</a>
-        <a href="#" class="a-herf white"><i class="fa fa-play"></i> Watch Now</a>
-      </div> -->
     </section>
-    <section id="handbag-section">
+    <!-- cover end  -->
+    <!-- recently veiw section  -->
+    <section class="mt-5 pt-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7 col-md-6 col-12 handbag-left m-auto">
-            <a href="#">
-              <!-- <img src="assets/img/0816_hp_c02a_img.jpg" alt="Image" class="col-10"> -->
-              <div class="video-block">
-                <video class=" col-12 col-lg-9 m-auto text-center" autoplay muted loop id="myVideo">
-                  <source src="assets/video/Hero_MOB.mp4" type="video/mp4">
-                  Your browser does not support HTML5 video.
-                </video>
-              </div>
+          <div class="col-lg-3 col-md-12 text-center recently pt-5">
+            <h2 class="serif">Recently</h2>
+            <h1 class="serif">Viewed</h1>
+          </div>
+          <div class="col-lg-3 col-md-12 text-center">
+            <a href="#" class="text-dark a-herf">
+              <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+            <span class="p-0">Polo Ralph Lauren</span><br>
+            <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
             </a>
-            <p class="pt-3 pb-0">RL APP EXCLUSIVE</p>
-              <h2 class="serif p-0 m-0">Polo ID</h2>
-              <span class="serif">Discover the new collection of handbags</span>
-              <br>
-            <a href="#" class="u-botton text-light border-light">Shop Now</a>
-            </div>
-          <div class="col-lg-5 col-md-6 col-12 handbag-right">
-            <h2 class="text-center serif">Polo ID Handbags</h2>
-            <div id="handbagsection" class="carousel slide" data-bs-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-bs-target="#handbagsection" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#handbagsection" data-bs-slide-to="1"></li>
-                <li data-bs-target="#handbagsection" data-bs-slide-to="2"></li>
-                <li data-bs-target="#handbagsection" data-bs-slide-to="3"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <a href="#" class="a-herf">
-                    <img src="assets/img/0816_hp_c02b_img.jpg" class="d-block w-100" alt="slider Image ">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h1 class="serif text-light">The Shoulder</h1>
-                      <span class="u-botton text-light border-light">EXPLORE NOW</span>
-                    </div>
-                  </a>
-                </div>
-                <div class="carousel-item">
-                  <a href="#" class="a-herf">
-                      <img src="assets/img/0816_hp_c02c_img.jpg" class="d-block w-100" alt="Slider Image">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h1 class="serif text-light">The Shoulder</h1>
-                        <span class="u-botton text-light border-light">EXPLORE NOW</span>
-                    </div>
-                  </a>
-                </div>
-                <div class="carousel-item">
-                  <a href="#" class="a-herf">
-                    <img src="assets/img/0816_hp_c02d_img.jpg" class="d-block w-100" alt="Slider Image">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h1 class="serif text-light">The Shoulder</h1>
-                        <span class="u-botton text-light border-light">EXPLORE NOW</span>
-                    </div>
-                  </a>
-                </div>
-                <div class="carousel-item">
-                  <a href="#" class="a-herf">
-                    <img src="assets/img/0816_hp_c02e_img.jpg" class="d-block w-100" alt="Slider Image">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h1 class="serif text-light">The Shoulder</h1>
-                        <span class="u-botton text-light border-light">EXPLORE NOW</span>
-                  </div>
-                  </a>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#handbagsection" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-circle-chevron-left"></i></span>
-                <span class="visually-hidden">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#handbagsection" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-circle-chevron-right"></i></span>
-                <span class="visually-hidden">Next</span>
-              </a>
-            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 text-center">
+            <a href="#" class="text-dark a-herf">
+              <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+            <span class="p-0">Polo Ralph Lauren</span><br>
+            <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-12 text-center">
           </div>
         </div>
       </div>
     </section>
-
-
-    <!-- Header end  -->
-    <!-- for you section -->
-    <section id="foryou">
-      <div class="container">
-        <div class="d-flex align-items-center"><h3>Good Evening </h3><span><a href="#" class="a-herf text-dark border-top-0 border-end-0 border-start-0 border border-dark ms-2">Sign up</a> for the personailzed experience.</span>
-          <br>
-        </div>
-        <div class="tab mt-4">
-          <a href="#" class="p-0 btn text-dark border-0 border-top-0 border-end-0 border-start-0 border border-dark serif "><h3>For you</h3></a>
-          <a href="#" class="btn text-dark border-0 serif p-0"><h3>Wishlist</h3></a>
-          <div class="d-flex align-items-center justify-content-between p-0"><p>Our top shopping recommendations for you</p><a href="#" class="text-dark">Discover Our Personalized Shopping Experience</a></div>
-        </div>
-        <div class="category-grid row">
-          <div class="col-lg-3 col-md-4">
-            <a href="category.html" class="">
-            <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
-            <span>CASUAL SHIRTS & DRESS SHIRTS</span>​</a>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
-            <a href="#" class="pt-3">CASUAL SHIRTS & DRESS SHIRTS​</a>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
-            <a href="#" class="pt-3">CASUAL SHIRTS & DRESS SHIRTS​</a>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
-            <a href="#" class="pt-3">CASUAL SHIRTS & DRESS SHIRTS​</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- for you section -->
+    <!-- recently veiw section  -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js" integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -1344,6 +1471,12 @@
     <script src="assets/js/main.js"></script>
 
     <script>
+      $(document) .ready(function() {
+              $("#optionselect").change(function(){
+              var values=$("#optionselect option:selected");
+              alert(values.text());
+              });
+              });
     </script>
 </body>
 </html>

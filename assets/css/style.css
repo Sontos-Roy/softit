@@ -41,6 +41,9 @@
 }
 
 /* Global Classes  */
+.font-sm{
+    font-size: 12px;
+}
 .a-herf{
     text-decoration: none;
 }
@@ -170,7 +173,7 @@ body{
 }
 .fixed{
     position: fixed;
-    top: 0;
+    top: 80px;
     color: black;
     background: var(--b-white2);
 }
@@ -428,3 +431,60 @@ body{
     text-decoration: underline;
 }
 /* for you section  */
+
+/* for Category section  */
+.filter-wiget{
+    display: none;
+    background-color: white;
+    max-height: 60vh;
+}
+.sort-select, .sort-options{
+    margin-top: -18px;
+}
+.sortby{
+    font-weight: 600;
+    padding-right: 10px;
+}
+.sort-select{
+    border: none;
+    width: auto;
+    background: transparent;
+
+}
+.sort-select:focus{
+    border: transparent;
+}
+.sort-select:focus-visible{
+    border: transparent;
+    outline: none;
+}
+.sort-select option{
+    border: none;
+}
+.sort-select option:hover{
+    background-color: #F2F3F5;
+}
+.filter-wiget{
+    border-top: 1px solid black;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    margin-top: 40px;
+}
+.filter-wigetcol div a{
+    font-size: 12px;
+}
+/* for Category section  */
+/* recently viewed section  */
+.recently{
+    padding-top: 100px;
+    height: 40vh;
+    align-items: center;
+}
+.recently h1{
+    font-size: 50px;
+}
+.recently h2{
+    font-size: 45px;
+}
+/* recently viewed section  */

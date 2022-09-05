@@ -144,6 +144,11 @@ $(document).ready(function() {
             $('.search-wiget').stop(true).slideToggle('medium');
         }
     );
+    $("#filter").click(
+        function() {
+            $('.filter-wiget').stop(true).slideToggle('medium');
+        }
+    );
 });
 
 
@@ -163,5 +168,11 @@ $(document).ready(function(){
     });
 });
 
-
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 100) {
+        $('.filter-wiget').addClass('fixed');
+    } else {
+        $('.filter-wiget').removeClass('fixed');
+    }
+});
 
