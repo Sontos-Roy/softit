@@ -186,11 +186,11 @@ $(document).ready(function(){
     });
 });
 
-$(window).bind('scroll', function () {
-    if ($(window).scrollTop() > 100) {
-        $('.filter-wiget').addClass('fixed');
-    } else {
-        $('.filter-wiget').removeClass('fixed');
-    }
-});
+// $(window).scroll(function () {
+//     if ($(window).scrollTop() > 100) {
+//         $('.filter-wiget').addClass('fixed');
+//     } else {
+//         $('.filter-wiget').removeClass('fixed');
+//     }
+// });
 

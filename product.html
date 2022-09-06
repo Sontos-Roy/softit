@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polo Golf & Ralph Lauren: Golf Clothing | Ralph Lauren</title>
@@ -11,9 +8,23 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
+    <script src="assets/js/jquery.min.js"></script>
     <style>
       .navbar-nav .nav-item .nav-link:hover>.dropdown{
         display: block;
+      }
+      .navbar{
+        background-color: white;
+        color: black;
+      }
+      .navbar .navbar-brand{
+        color: black;
+      }
+      .navbar-nav .nav-item .nav-link{
+        color: black;
+      }
+      .icons a{
+        color: black;
       }
     </style>
 </head>
@@ -22,7 +33,7 @@
     <!-- Header Start  -->
     <header class="header" id="header">
 
-        <nav class="navbar navbar-expand-lg ps-5 pe-5 sticky" id="navbar">
+        <nav class="navbar navbar-expand-lg ps-5 pe-5 sticky" id="category">
                 <div class="navbar-toggler ma5menu__toggle ps-2">
                   <div class="bar1"></div>
                   <div class="bar2"></div>
@@ -1174,216 +1185,211 @@
           </nav>
 
     </header>
-    <section id="banner" class="p-0 m-0">
-      <div id="coversection" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-bs-target="#coversection" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#coversection" data-bs-slide-to="1"></li>
-          <li data-bs-target="#coversection" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner header-carousel">
-          <div class="carousel-item active">
-            <img src="assets/img/0823_hp_c07_img.jpg" class="d-block w-100" alt="Product">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    <!-- Header end  -->
+
+    <!-- cover start  -->
+    <section class="mt-5 pt-5">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <img src="assets/img/s7-1459362_lifestyle.jpg" alt="product" class="col-12">
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-12 d-lg-block d-md-none d-none">
+                            <img src="assets/img/s7-1459362_lifestyle.jpg" alt="product" class="col-12">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="pt-5 d-block d-lg-none d-md-block"></div>
+                    <small>Polo Ralph Lauren</small>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>Plaid Wool-Blend Twill Ball Cap</h5>
+                        <button class="btn border-0 ps-3"><h4><i class="fa-regular fa-heart"></i></h4></button>
+                    </div>
+                    <small>$125.00</small>
+                    <hr>
+                    <p>
+                        <small>Chest</small>
+                    </p>
+                    <button class="btn btn-sm">36</button>
+                    <button class="btn btn-sm">38</button>
+                    <button class="btn btn-sm">40</button>
+                    <button class="btn btn-sm">42</button>
+                    <button class="btn btn-sm">44</button>
+                    <button class="btn btn-sm">46</button>
+                    <button class="btn btn-sm">48</button>
+                    <br>
+                    <br>
+                    <p><small>
+                        Length
+                    </small></p>
+                    <button class="btn btn-sm">Regular</button>
+                    <button class="btn btn-sm">Short</button>
+                    <button class="btn btn-sm">Long</button>
+                    <br><br>
+                    <div class="text-center">
+                        <button class="btn text-muted btn-light" data-bs-toggle="modal" data-bs-target="#sizechart"><i class="fa fa-ruler-horizontal"></i> Size Chart</button>
+
+                        <div class="modal fade" id="sizechart" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalTitleId">Size Chart</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="assets/img/SIZECHART_cms.webp" alt="" class="col-12">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Optional: Place to the bottom of scripts -->
+                        <script>
+                            const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+
+                        </script>
+                    </div>
+                    <br>
+                    <button class="add-cart text-center col-12 btn btn-primary">Add to Cart</button>
+                </div>
+                <style>
+                    .display{
+                        display: none !important;
+                    }
+                </style>
+                <div class="col-lg-7 col-md-6 col-12 pt-5">
+                    <div class="tags text-center">
+                        <button class="btn" id="product-discription">DISCRIPTION</button>
+                        <button class="btn" id="product-details">DETAILS</button>
+                        <button class="btn" id="product-shipping">SHIPPING & FREE RETURN</button>
+                    </div>
+                    <div class="tag-details col-12 pt-2">
+                        <hr>
+                        <div id="discription-box" class="discription-box col-12">
+                            <div class="p-3 text-center font-m-sm">
+                                <small>
+                                    The Polo Soft fit puts a modern spin on classic preppy style with a natural shoulder and a half-canvassed construction. This double-breasted version is crafted from pure linen fabric sourced from one of the world's oldest mills located in Ireland.
+                                </small>
+
+                            </div>
+                        </div>
+                        <div id="details-box" class="details-box col-12 display">
+                            <div class="p-3 font-m-sm">
+                                <small>
+                                    <ul class="row">
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <li>Polo Soft: trim fit, with a natural shoulder, a high armhole, 4¼" lapels, and a shorter length.</li>
+                                        <li>Size 40R has a 29¾" front body length, a 29½" back body length, an 18½" shoulder, and a 17½" sleeve inseam.</li>
+                                        <li>Peak lapels. Buttonhole at the left lapel. Double-breasted silhouette.</li>
+                                        <li>Cuffs with four decorative buttons. </li>
+                                        <li>Left chest welt pocket. Two front waist flapped pockets. Two interior chest pockets.</li>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                        <li>Double vent. Lined at the back yoke and the sleeves. Half-canvassed.</li>
+                                        <li>Alterations available in Ralph Lauren retail stores. </li>
+                                        <li>Shell: linen. Body lining: cupro. Sleeve lining: viscose, acetate. Dry clean. Made in Portugal.</li>
+                                        <li>Model is 6'1"/185 cm and wears a size 40R. </li>
+                                        </div>
+                                    </ul>
+                                </small>
+
+                            </div>
+                        </div>
+                        <div id="product-shipping-box" class="details-box col-12 display">
+                            <div class="p-3 font-m-sm text-center">
+                                <p class="p-2 "><b>
+                                    Free Fast Shipping With a Ralph Lauren Account
+                                </b></p>
+                                <p class="p-2"><b>
+                                    Receive by Friday, September 09, if you order by 3 PM ET and select Fast shipping at checkout.
+                                </b></p>
+                                <a href="#" class="text-dark"><b>Free Returns & Exchanges</b></a>
+                                <div class="font-sm pb-3 pt-2">
+                                    Enjoy free returns and exchanges within 30 days of the order shipment date. Personalized items and gift boxes cannot be returned.
+                                </div>
+                                <a href="#" class="text-dark"><b>Shipping & Pickup</b></a>
+                                <div class="font-sm pb-3 pt-2">
+                                    Enjoy free returns and exchanges within 30 days of the order shipment date. Personalized items and gift boxes cannot be returned.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/0823_hp_c07_img.jpg" class="d-block w-100" alt="">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <br>
+            <div class="recomended">
+                <h3 class="serif pb-2 pt-2">Recomended for you</h3>
+                <div class="row col-12">
+                    <div class="col-lg-3 col-md-4 product-div">
+                        <a href="category.html" class="s-product">
+                        <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
+                        <span>CASUAL SHIRTS & DRESS SHIRTS</span>​</a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 product-div">
+                        <a href="category.html" class="s-product">
+                        <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
+                        <span>CASUAL SHIRTS & DRESS SHIRTS</span>​</a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 product-div">
+                        <a href="category.html" class="s-product">
+                        <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
+                        <span>CASUAL SHIRTS & DRESS SHIRTS</span>​</a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 product-div">
+                        <a href="category.html" class="s-product">
+                        <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
+                        <span>CASUAL SHIRTS & DRESS SHIRTS</span>​</a>
+                      </div>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/0823_hp_c07_img.jpg" class="d-block w-100" alt="">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div>
         </div>
-        <a class="carousel-control-prev" href="#coversection" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-circle-chevron-left"></i></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#coversection" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-circle-chevron-right"></i></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-      </div>
-      <!-- <div class="text-center cover">
-        <img src="assets/svg/2022_womens_polo_logo_white.svg" alt="Text">
-        <p class="small-text serif white pt-4">Discover the new Polo ID handbag collection</p>
-        <a href="#" class="a-herf white">Explore Now</a>
-        <a href="#" class="a-herf white"><i class="fa fa-play"></i> Watch Now</a>
-      </div> -->
     </section>
-    <section id="handbag-section">
+    <script src="assets/js/product.js"></script>
+    <!-- cover end  -->
+    <!-- recently veiw section  -->
+    <section class="mt-5 pt-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7 col-md-6 col-12 handbag-left m-auto">
-            <a href="#">
-              <!-- <img src="assets/img/0816_hp_c02a_img.jpg" alt="Image" class="col-10"> -->
-              <div class="video-block">
-                <video class=" col-12 col-lg-9 m-auto text-center" autoplay muted loop id="myVideo">
-                  <source src="assets/video/Hero_MOB.mp4" type="video/mp4">
-                  Your browser does not support HTML5 video.
-                </video>
-              </div>
+          <div class="col-lg-3 col-md-12 text-center recently pt-5">
+            <h2 class="serif">Recently</h2>
+            <h1 class="serif">Viewed</h1>
+          </div>
+          <div class="col-lg-3 col-md-12 text-center">
+            <a href="#" class="text-dark a-herf">
+              <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+            <span class="p-0">Polo Ralph Lauren</span><br>
+            <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
             </a>
-            <p class="pt-3 pb-0">RL APP EXCLUSIVE</p>
-              <h2 class="serif p-0 m-0">Polo ID</h2>
-              <span class="serif">Discover the new collection of handbags</span>
-              <br>
-            <a href="#" class="u-botton text-light border-light">Shop Now</a>
-            </div>
-          <div class="col-lg-5 col-md-6 col-12 handbag-right">
-            <h2 class="text-center serif">Polo ID Handbags</h2>
-            <div id="handbagsection" class="carousel slide" data-bs-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-bs-target="#handbagsection" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#handbagsection" data-bs-slide-to="1"></li>
-                <li data-bs-target="#handbagsection" data-bs-slide-to="2"></li>
-                <li data-bs-target="#handbagsection" data-bs-slide-to="3"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <a href="#" class="a-herf">
-                    <img src="assets/img/0816_hp_c02b_img.jpg" class="d-block w-100" alt="slider Image ">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h1 class="serif text-light">The Shoulder</h1>
-                      <span class="u-botton text-light border-light">EXPLORE NOW</span>
-                    </div>
-                  </a>
-                </div>
-                <div class="carousel-item">
-                  <a href="#" class="a-herf">
-                      <img src="assets/img/0816_hp_c02c_img.jpg" class="d-block w-100" alt="Slider Image">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h1 class="serif text-light">The Shoulder</h1>
-                        <span class="u-botton text-light border-light">EXPLORE NOW</span>
-                    </div>
-                  </a>
-                </div>
-                <div class="carousel-item">
-                  <a href="#" class="a-herf">
-                    <img src="assets/img/0816_hp_c02d_img.jpg" class="d-block w-100" alt="Slider Image">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h1 class="serif text-light">The Shoulder</h1>
-                        <span class="u-botton text-light border-light">EXPLORE NOW</span>
-                    </div>
-                  </a>
-                </div>
-                <div class="carousel-item">
-                  <a href="#" class="a-herf">
-                    <img src="assets/img/0816_hp_c02e_img.jpg" class="d-block w-100" alt="Slider Image">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h1 class="serif text-light">The Shoulder</h1>
-                        <span class="u-botton text-light border-light">EXPLORE NOW</span>
-                  </div>
-                  </a>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#handbagsection" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-circle-chevron-left"></i></span>
-                <span class="visually-hidden">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#handbagsection" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-circle-chevron-right"></i></span>
-                <span class="visually-hidden">Next</span>
-              </a>
-            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 text-center">
+            <a href="#" class="text-dark a-herf">
+              <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+            <span class="p-0">Polo Ralph Lauren</span><br>
+            <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-12 text-center">
           </div>
         </div>
       </div>
     </section>
+    <!-- recently veiw section  -->
 
-
-    <!-- Header end  -->
-    <!-- for you section -->
-    <section>
-      <div class="container">
-        <div class="d-flex align-items-center"><h3>Good Evening </h3><span><a href="#" class="a-herf text-dark border-top-0 border-end-0 border-start-0 border border-dark ms-2">Sign up</a> for the personailzed experience.</span>
-          <br>
-        </div>
-        <div class="tab mt-4">
-          <div class="d-flex">
-            <div id="foryou" class="pt-1 btn border-0 border-top-0 border-end-0 border-start-0 border border-dark serif " style="color: black;"><h4>For you</h4></div>
-            <div id="wishlist" class="btn border-0 serif ps-2" style="color: gray;"><h4>Wishlist</h4></div>
-          </div>
-
-
-        <div class="category-grid foryou" style="display: block;">
-          <div class="d-flex justify-content-between p-2"><p>Our top shopping recommendations for you</p><a href="#" class="text-dark">Discover Our Personalized Shopping Experience</a></div>
-          <div class="row">
-            <div class="col-lg-3 col-md-4 product-div">
-              <a href="category.html" class="s-product">
-              <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
-              <span>CASUAL SHIRTS & DRESS SHIRTS</span>​</a>
-            </div>
-            <div class="col-lg-3 col-md-4 product-div">
-              <a href="category.html" class="s-product">
-              <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
-              <span>CASUAL SHIRTS & DRESS SHIRTS</span>​</a>
-            </div>
-            <div class="col-lg-3 col-md-4 product-div">
-              <a href="category.html" class="s-product">
-              <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
-              <span>CASUAL SHIRTS & DRESS SHIRTS</span>​</a>
-            </div>
-            <div class="col-lg-3 col-md-4 product-div">
-              <a href="category.html" class="s-product">
-              <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
-              <span>CASUAL SHIRTS & DRESS SHIRTS</span>​</a>
-            </div>
-          </div>
-        </div>
-        <div class="category-grid wishlist" style="display: none;">
-          <div class="row">
-            <div class="col-lg-3 col-md-4 product-div h-100">
-              <div class="s-product text-center" style="height: 77vh; background-color: rgb(204, 204, 204);">
-                <h3>Wishlist</h3>
-                <h3><i class="fa-regular fa-heart"></i></h3>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 product-div">
-              <a href="category.html" class="s-product">
-              <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
-              <span>CASUAL SHIRTS & DRESS SHIRTS</span>​</a>
-            </div>
-            <div class="col-lg-3 col-md-4 product-div">
-              <a href="category.html" class="s-product">
-              <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
-              <span>CASUAL SHIRTS & DRESS SHIRTS</span>​</a>
-            </div>
-            <div class="col-lg-3 col-md-4 product-div">
-              <a href="category.html" class="s-product">
-              <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
-              <span>CASUAL SHIRTS & DRESS SHIRTS</span>​</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-    <!-- for you section -->
-    <!-- footer section start  -->
-    <footer>
-      
-    </footer>
-    <!-- footer section end  -->
-    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery-ui.min.js"></script>
-    <script src="assets/js/foryou.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js" integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/ma5-menu.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
 
-    <script>
-    </script>
+
+
 </body>
 </html>

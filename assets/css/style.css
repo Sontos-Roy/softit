@@ -44,6 +44,12 @@
 .font-sm{
     font-size: 12px;
 }
+.font-m-sm{
+    font-size: 13px;
+}
+.font-m{
+    font-size: 14px;
+}
 .a-herf{
     text-decoration: none;
 }
@@ -173,7 +179,9 @@ body{
 }
 .fixed{
     position: fixed;
-    top: 80px;
+    top: 58px;
+    width: 100%;
+    left: 0;
     color: black;
     background: var(--b-white2);
 }
@@ -235,7 +243,8 @@ body{
     overflow: auto;
     position: absolute;
     left: 0;
-    background: var(--b-white2);
+    margin-top: 20px;
+    background: white;
     color: var(--light-black);
 }
 .dropdown::-webkit-scrollbar{
@@ -433,9 +442,7 @@ body{
 /* for you section  */
 
 /* for Category section  */
-.filter-wiget{
 
-}
 .sort-select, .sort-options{
     margin-top: -18px;
 }
@@ -467,10 +474,12 @@ body{
     width: 90%;
     position: absolute;
     left: 5%;
-    margin-top: 60px;
+    margin-top: 40px;
     display: none;
     background-color: white;
     max-height: 60vh;
+    overflow-y: scroll;
+    padding: 20px;
 }
 .filter-wigetcol div a{
     font-size: 12px;
@@ -479,7 +488,7 @@ body{
 /* recently viewed section  */
 .recently{
     padding-top: 100px;
-    height: 40vh;
+    height: 60vh;
     align-items: center;
 }
 .recently h1{
@@ -489,3 +498,7 @@ body{
     font-size: 45px;
 }
 /* recently viewed section  */
+
+/* product page  */
+
+/* product page  */
