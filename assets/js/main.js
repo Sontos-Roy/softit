@@ -7,6 +7,7 @@ $(window).scroll(function(event){
             'background-color', 'white',
             'color', 'black'
             );
+
             $(".navbar-brand").css(
                 'color', 'black'
             );
@@ -39,14 +40,14 @@ $(window).scroll(function(event){
     }
    } else if(st == 0) {
     if($(".ma5menu--left").hasClass("ma5menu--active")){
-        $(".navbar").css(
+        $("#navbar").css(
             'background-color', 'white',
             'color', 'black'
             );
-            $(".navbar-brand").css(
+            $("#navbar .navbar-brand").css(
                 'color', 'black'
                 );
-            $(".navbar-nav li a").css(
+            $("#navbar .navbar-nav li a").css(
                     'color', 'black'
                     );
             $(".icons a").css(
@@ -57,18 +58,35 @@ $(window).scroll(function(event){
             );
                     }else{
 
-                        $(".navbar").css(
+                        $("#navbar").css(
                             'background-color', 'transparent',
                             'color', 'white'
                             );
-                            $(".navbar-brand").css(
+
+        $("#category").css(
+            'background-color', 'white',
+            'color', 'black'
+            );
+                            $("#navbar .navbar-brand").css(
                                 'color', 'white'
                             );
-                            $(".navbar-nav li a").css(
+                            $("#category .navbar-brand").css(
+                                'color', 'black'
+                            );
+                            $("#category .navbar-nav li a").css(
+                                'color', 'black'
+                            );
+                            $("#navbar .navbar-nav li a").css(
                                 'color', 'white'
                             );
-                            $(".icons a").css(
+                            $("#category .icons a").css(
+                                'color', 'black'
+                            );
+                            $("#navbar .icons a").css(
                                 'color', 'white'
+                            );
+                            $("#category .bar1,#category .bar2").css(
+                                'background-color', 'black'
                             );
                             $(".bar1, .bar2").css(
                                 'background-color', 'white'

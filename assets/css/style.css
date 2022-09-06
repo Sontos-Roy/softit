@@ -422,12 +422,12 @@ body{
 #foryou{
     padding-top: 50px;
 }
-.category-grid div a{
+.product-div .s-product{
     font-size: 12px;
-    color: var(--light-black);
+    color: black;
     text-decoration: none;
 }
-.category-grid div:hover a{
+.product-div:hover a{
     text-decoration: underline;
 }
 /* for you section  */
