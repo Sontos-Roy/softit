@@ -72,6 +72,9 @@
     .handbag-right{
         margin-top: 30px;
     }
+    .wishlist-item-first{
+        height: 77vh;
+    }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -156,6 +159,9 @@
     #banner{
         margin-top: 8px !important;
     }
+    .wishlist-item-first{
+        height: 58vh;
+    }
 }
 
 /*X-Large devices (large desktops, 1200px and up)*/
@@ -167,6 +173,9 @@
     }
     #handbag-section{
         padding-top: 100px;
+    }
+    .wishlist-item-first{
+        height: 58vh;
     }
 }
 
@@ -180,5 +189,8 @@
     #handbag-section{
         padding-top: 80px;
         padding-bottom: 20px;
+    }
+    .wishlist-item-first{
+        height: 58px;
     }
 }
