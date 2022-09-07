@@ -63,29 +63,29 @@ $(window).scroll(function(event){
                             'color', 'white'
                             );
 
-        $("#category").css(
+        $("#forwhitebg").css(
             'background-color', 'white',
             'color', 'black'
             );
                             $("#navbar .navbar-brand").css(
                                 'color', 'white'
                             );
-                            $("#category .navbar-brand").css(
+                            $("#forwhitebg .navbar-brand").css(
                                 'color', 'black'
                             );
-                            $("#category .navbar-nav li a").css(
+                            $("#forwhitebg .navbar-nav li a").css(
                                 'color', 'black'
                             );
                             $("#navbar .navbar-nav li a").css(
                                 'color', 'white'
                             );
-                            $("#category .icons a").css(
+                            $("#forwhitebg .icons a").css(
                                 'color', 'black'
                             );
                             $("#navbar .icons a").css(
                                 'color', 'white'
                             );
-                            $("#category .bar1,#category .bar2").css(
+                            $("#forwhitebg .bar1,#category .bar2").css(
                                 'background-color', 'black'
                             );
                             $(".bar1, .bar2").css(

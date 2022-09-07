@@ -57,6 +57,12 @@
     color: white;
     text-decoration: none;
 }
+.h-u{
+    text-decoration: none;
+}
+.h-u:hover{
+    text-decoration: underline;
+}
 .white{
     color: var(--white);
 }
