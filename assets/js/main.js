@@ -85,10 +85,10 @@ $(window).scroll(function(event){
                             $("#navbar .icons a").css(
                                 'color', 'white'
                             );
-                            $("#forwhitebg .bar1,#category .bar2").css(
+                            $("#forwhitebg .bar1,#forwhitebg .bar2").css(
                                 'background-color', 'black'
                             );
-                            $(".bar1, .bar2").css(
+                            $("#navbar .bar1,#navbar .bar2").css(
                                 'background-color', 'white'
                             );
                     }
@@ -116,6 +116,9 @@ function toggleSound() {
     });
 });
 $(document).ready(function(){
+    $("#forwhitebg .bar1,#forwhitebg .bar2").css(
+        'background-color', 'black'
+    );
     $('.navbar').click(function(){
         $(".navbar").css(
             'background-color', 'white',
@@ -194,3 +197,23 @@ $(document).ready(function(){
 //     }
 // });
 
+$(document).ready(function(){
+    $('#cart-sidebar-btn').click(function(){
+        $('.cart-sidebar').css(
+            'right', '0'
+        );
+        $('.overlay-sidebar').fadeIn('slow');
+    });
+    $('#cart-sidebar-close, .overlay-sidebar').click(function(){
+        $('.cart-sidebar').css(
+            'right', '-100%'
+        );
+        $('.overlay-sidebar').fadeOut('slow');
+    });
+});
+$(document).ready(function(){
+    $('#address-manually').click(function(){
+        $('#address-manually').css('display','none');
+        $('.address-manually').slideDown('medium');
+    });
+});
