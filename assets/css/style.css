@@ -41,6 +41,12 @@
 }
 
 /* Global Classes  */
+.c-cursor{
+    cursor: url('../img/png_plus_52165.png');
+}
+.c-cursor:hover{
+    cursor: url(../img/png_plus_52165.png) !important;
+}
 .font-sm{
     font-size: 12px;
 }
