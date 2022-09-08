@@ -217,3 +217,8 @@ $(document).ready(function(){
         $('.address-manually').slideDown('medium');
     });
 });
+// $(document).ready(function(){
+//     $("#grid-4").click(function(){
+//         $(".products .col-lg-3").remo
+//     });
+// });

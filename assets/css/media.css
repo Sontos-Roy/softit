@@ -26,16 +26,23 @@
         left: 15px;
     }
     .search-wiget{
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 100%;
         left: 0;
-        min-height: 100vh;
+        max-height: 100vh;
         display: none;
         background-color: var(--b-white2);
         z-index: 99999999;
         transition: all 0.5s linear;
         animation: fadein 0.5s ease-in-out;
+    }
+    .search-form .form-control::placeholder{
+        font-size: 20px;
+    }
+    .search-form .input-group span{
+        font-size: 20px;
+        font-weight: 300;
     }
     .signupin{
             background-image: url(../svg/user.svg);

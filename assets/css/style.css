@@ -319,6 +319,8 @@ body{
     background-color: var(--b-white2);
     z-index: 999999;
     display: none;
+    overflow-x: hidden;
+    max-height: 60vh;
 }
 @keyframes fadeout {
     0%{
@@ -359,6 +361,11 @@ body{
 }
 .search-form .form-control:focus{
     outline-color: transparent;
+}
+.search-form-popular{
+    margin-top: -4rem;
+    padding: 10px;
+    color: white;
 }
 /* Header End  */
 
