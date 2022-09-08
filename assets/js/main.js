@@ -76,7 +76,7 @@ $(window).scroll(function(event){
                             $("#forwhitebg .navbar-nav li a").css(
                                 'color', 'black'
                             );
-                            $("#navbar .navbar-nav li a").css(
+                            $("#navbar .navbar-nav .nav-item .nav-link").css(
                                 'color', 'white'
                             );
                             $("#forwhitebg .icons a").css(
@@ -140,22 +140,45 @@ $(document).ready(function(){
                 'background-color', 'white'
             );
     });
+    $(".navbar").hover(
+        function(){
+            $(".navbar").css(
+                'background-color', 'white',
+                'color', 'black'
+                );
+                $(".navbar-brand").css(
+                    'color', 'black'
+                    );
+                $(".navbar-nav li a").css(
+                        'color', 'black'
+                        );
+                $(".icons a").css(
+                            'color', 'black'
+                );
+                $(".bar1").css(
+                    'background-color', 'white'
+                );
+                $(".bar2").css(
+                    'background-color', 'white'
+                );
+        }
+    );
 });
 $(document).ready(function() {
     $("#men-hover").hover(
         function() {
-            $('.dp-1').stop(true).slideDown('medium');
+            $('#men-hover-dropdown').stop(true).slideDown('medium');
         },
         function() {
-            $('.dp-1').stop(true).slideUp('medium');
+            $('#men-hover-dropdown').stop(true).slideUp('medium');
         }
     );
     $("#women-hover").hover(
         function() {
-            $('.dp-2').stop(true).slideDown('medium');
+            $('#women-hover-dropdown').stop(true).slideDown('medium');
         },
         function() {
-            $('.dp-2').stop(true).slideUp('medium');
+            $('#women-hover-dropdown').stop(true).slideUp('medium');
         }
     );
 });
@@ -198,17 +221,23 @@ $(document).ready(function(){
 // });
 
 $(document).ready(function(){
-    $('#cart-sidebar-btn').click(function(){
+    $('#cart-sidebar-btn').hover(function(){
         $('.cart-sidebar').css(
             'right', '0'
         );
-        $('.overlay-sidebar').fadeIn('slow');
+        $('.overlay-sidebar').delay(500).fadeIn('slow');
     });
-    $('#cart-sidebar-close, .overlay-sidebar').click(function(){
+    $('.overlay-sidebar').hover(function(){
         $('.cart-sidebar').css(
             'right', '-100%'
         );
-        $('.overlay-sidebar').fadeOut('slow');
+        $('.overlay-sidebar').delay(-100).fadeOut('medium');
+    });
+    $('#cart-sidebar-close').click(function(){
+        $('.cart-sidebar').css(
+            'right', '-100%'
+        );
+        $('.overlay-sidebar').delay(-100).fadeOut('medium');
     });
 });
 $(document).ready(function(){
@@ -222,3 +251,5 @@ $(document).ready(function(){
 //         $(".products .col-lg-3").remo
 //     });
 // });
+
+

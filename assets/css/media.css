@@ -1,5 +1,8 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
+    .font-xl{
+        font-size: 35px;
+    }
     .top-banner{
         display: none;
     }
@@ -86,6 +89,9 @@
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
+    .font-xl{
+        font-size: 38px;
+    }
     .navbar .navbar-brand{
         font-size: 22px;
     }
@@ -110,13 +116,13 @@
         background-color: rgb(187, 187, 187) !important;
     }
 
-    #banner{
-        margin-top: 0px !important;
-    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .font-xl{
+        font-size: 40px;
+    }
     .navbar .navbar-brand{
         font-size: 25px;
     }
@@ -147,13 +153,13 @@
     .jquery-background-video{
         margin-top: -69px;
     }
-    #banner{
-        margin-top: 15px !important;
-    }
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    .font-xl{
+        font-size: 42px;
+    }
     .navbar .navbar-brand{
         font-size: 30px;
     }
@@ -163,9 +169,6 @@
     .jquery-background-video{
         margin-top: -69px;
     }
-    #banner{
-        margin-top: 8px !important;
-    }
     .wishlist-item-first{
         height: 58vh;
     }
@@ -173,7 +176,9 @@
 
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-
+    .font-xl{
+        font-size: 45px;
+    }
     .search-wiget .container{
         width: 70%;
         margin: 0 auto;
@@ -188,7 +193,10 @@
 
 /*XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
-
+    .font-xl{
+        font-size: 48px;
+        letter-spacing: 3px;
+    }
     .search-wiget .container{
         width: 70%;
         margin: 0 auto;

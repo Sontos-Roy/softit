@@ -81,10 +81,25 @@
     transition: 0.3s;
     font-family: var(--founders-text-regular);
 }
+.u-botton-dark{
+    color: black;
+    text-decoration: none;
+    padding-bottom: 5px;
+    font-size: 13px;
+    border-bottom: 1px solid rgb(49, 49, 49);
+    transition: 0.3s;
+    font-family: var(--founders-text-regular);
+}
 .u-botton:hover{
     padding-bottom: 0;
     transition: 0.3s;
     color: white;
+}
+.u-botton-dark:hover{
+    padding-bottom: 0;
+    transition: 0.3s;
+    color: black;
+    cursor: pointer;
 }
 
 /* Global Classes  */
@@ -166,12 +181,18 @@ body{
         opacity: 1;
     }
 }
+.icons ul{
+    margin-top: 15px !important;
+}
 .navbar-nav{
     margin-left: 40px;
     width: 100%;
 }
 .navbar-nav li{
     margin: 0 15px;
+}
+.icons ul li{
+    margin-left:10px !important;
 }
 .navbar-nav .nav-item .nav-link{
     font-size: 12px;
@@ -390,7 +411,11 @@ body{
     padding-bottom: 0;
 }
 
-
+.banner-text-cover{
+    position: absolute;
+    width: 100%;
+    margin-top: -14rem;
+}
 /* banner section end  */
 
 /* handbag section start  */
@@ -541,5 +566,8 @@ body{
 }
 .cart-sidebar::-webkit-scrollbar{
     width: 5px;
+}
+.cart_options .btn{
+    height: 40px;
 }
 /* Cart page  */
