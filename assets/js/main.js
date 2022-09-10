@@ -246,6 +246,11 @@ $(document).ready(function(){
         $('.address-manually').slideDown('medium');
     });
 });
+$(document).ready(function() {
+    $(".signin-up").hover(function(){
+        $(".signin-dp").stop(true).slideToggle('medium');
+    });
+});
 // $(document).ready(function(){
 //     $("#grid-4").click(function(){
 //         $(".products .col-lg-3").remo
@@ -292,6 +297,28 @@ $(document).ready(function(){
         1000:{
             items:3,
             nav:true,
+            loop:false
+        }
+    }
+        }
+    );
+    $(".recently2").owlCarousel(
+        {
+            loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:2,
+            nav:false,
             loop:false
         }
     }

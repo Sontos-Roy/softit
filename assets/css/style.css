@@ -42,10 +42,10 @@
 
 /* Global Classes  */
 .c-cursor{
-    cursor: url('../img/png_plus_52165.png');
+    cursor: pointer;
 }
 .c-cursor:hover{
-    cursor: url(../img/png_plus_52165.png) !important;
+    cursor: pointer;
 }
 .font-sm{
     font-size: 12px;
@@ -198,7 +198,7 @@ body{
     margin: 0 15px;
 }
 .icons ul li{
-    margin-left:10px !important;
+    margin-left:11px;
 }
 .navbar-nav .nav-item .nav-link{
     font-size: 12px;
@@ -328,11 +328,7 @@ body{
         opacity: 1;
     }
 }
-.icons a{
-    text-decoration: none;
-    color: var(--b-white2);
-    font-weight: 200;
-}
+
 
 .navbar:hover .icons a,.navbar-hover .icons a{
     color: black;
@@ -359,6 +355,15 @@ body{
         opacity: 0;
         display: block;
     }
+}
+.signin-dp{
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 3px 3px 0px grey;
+    max-height: 100vh;
+    overflow-y: scroll;
+    display: none;
 }
 .search-wiget .container{
     animation: fadein 1s ease-in-out;
@@ -393,6 +398,11 @@ body{
     margin-top: -4rem;
     padding: 10px;
     color: white;
+}
+.icons a{
+    text-decoration: none;
+    color: var(--b-white2);
+    font-weight: 200;
 }
 /* Header End  */
 
@@ -535,8 +545,6 @@ body{
 /* recently viewed section  */
 .recently{
     padding-top: 100px;
-    height: 60vh;
-    align-items: center;
 }
 .recently h1{
     font-size: 50px;
@@ -577,3 +585,28 @@ body{
     height: 40px;
 }
 /* Cart page  */
+
+/* sign in page  */
+.social-btn {
+
+}
+.social-btn:hover{
+    background-color: #041e3a; 
+    color: white;
+    transition: 0.3s;
+}
+.tab-header{
+
+}
+.signin-tab, .signup-tab{
+    background-color: rgb(223, 223, 223);
+    padding: 15px;
+    cursor: pointer;
+}
+.tab-active{
+    background-color: white !important;
+}
+.order-status h6{
+    font-family: var(--founders-medium);
+}
+/* sign in page  */

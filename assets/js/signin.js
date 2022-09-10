@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $(".signin-tab").click(function(){
+        $(".signin-body").fadeIn('fast');
+        $(".signup-body").fadeOut('fast');
+        $(".signin-tab").addClass("tab-active");
+        $(".signup-tab").removeClass("tab-active");
+    }); 
+    $(".signup-tab").click(function(){
+        $(".signin-tab").removeClass("tab-active");
+        $(".signup-tab").addClass("tab-active");
+        $(".signin-body").fadeOut('fast');
+        $(".signup-body").fadeIn('fast');
+    }); 
+});

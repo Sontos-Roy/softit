@@ -683,12 +683,55 @@
           </div>
           <div class="icons">
             <ul class="d-flex align-items-center pe-1">
-              <li class="nav-link"><a href="#_" class="white search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+              <li class="nav-link"><a href="#_" class="white search" title="Search Here...."><i class="fa-solid fa-magnifying-glass"></i></a></li>
               <li class="nav-link d-lg-block d-md-none d-none">
-                <a href="#" class="white "><i class="fa-regular fa-heart"></i></a></li>
-              <li class="nav-link d-lg-block d-md-none d-none">
-
-                <a href="#" class="white "><i class="fa-regular fa-user"></i></a></li>
+                <a href="#" class="white " title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a></li>
+              <li class="nav-link d-lg-block d-md-none d-none signin-up">
+                <a href="signin.html" class="white" title="Sign In / Sign Up"><i class="fa-regular fa-user"></i></a>
+                <div class="signin-dp col-12 col-lg-3 ms-lg-auto m-auto p-3">
+                  <div class="p-3"></div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="serif">Sign In</h2>
+                    <a href="signin.html" class="font-sm text-dark" style="text-decoration: underline;">Create An Account</a>
+                  </div>
+                  <form class="col-12">
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email address *</label>
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required placeholder="Enter Email Here">
+                      <!-- <div id="emailHelp" class="form-text text-danger">* Email is Required</div> -->
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password *</label>
+                      <input type="email" class="form-control" id="password" aria-describedby="passwordhelp" required placeholder="Enter Password Here">
+                      <!-- <div id="passwordhelp" class="form-text">* Password is Required</div> -->
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="font-m-sm text-muted" style="text-decoration: underline;">Forgot Password</a>
+                      <span class="text-muted font-m-sm">* Required</span>
+                    </div>
+                    <div class="mb-3 mt-3 form-check c-cursor">
+                      <input type="checkbox" class="form-check-input" id="check1"/>
+                      <label class="form-check-label text-muted" for="check1">Remember Me</label>
+                    </div>
+                    <button class="p-3 border col-12 mt-2" style="background-color: #041e3a; color: white;">Sign In</button>
+                      <div  class="text-center">
+                        <span>Or,</span>
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                          <a href="#" class="font-m-sm d-flex btn border text-center">
+                            <img src="assets/img/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" alt="" width="20"> <span> Google</span>
+                          </a>
+                        </div>
+                        <div class="col-6">
+                          <a href="#" class="font-m-sm d-flex btn border text-center">
+                            <img src="assets/img/facebook-logo-icon-facebook-icon-png-images-icons-and-png-backgrounds-1.png" alt="" width="20"> <span> Facebook</span>
+                          </a>
+                        </div>
+                      </div>
+                  </form>
+                </div>
+              </li>
               <li class="nav-link">
 
                 <a href="#?" class="white" id="cart-sidebar-btn"><i class="fa fa-bag-shopping"></i></a></li>
@@ -1125,23 +1168,25 @@
     <section class="mt-5 pt-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-12 text-center recently pt-5">
+          <div class="col-lg-3 col-md-4 text-center recently pt-5">
             <h2 class="serif p-5">Recently</h2>
-            <h1 class="serif p-5">Viewed</h1>
+            <h1 class="serif ps-5 pe-5">Viewed</h1>
           </div>
-          <div class="col-lg-3 col-md-12 text-center">
-            <a href="#" class="text-dark a-herf">
-              <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
-            <span class="p-0">Polo Ralph Lauren</span><br>
-            <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-12 text-center">
-            <a href="#" class="text-dark a-herf">
-              <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
-            <span class="p-0">Polo Ralph Lauren</span><br>
-            <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
-            </a>
+          <div class="col-lg-6 col-md-8 col-12 owl-carousel recently2">
+            <div class="text-center">
+              <a href="#" class="text-dark a-herf">
+                <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+              <span class="p-0">Polo Ralph Lauren</span><br>
+              <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
+              </a>
+            </div>
+            <div class="text-center">
+              <a href="#" class="text-dark a-herf">
+                <img src="assets/img/product1.jpg" alt="Product" class="col-12 pb-3">
+              <span class="p-0">Polo Ralph Lauren</span><br>
+              <a class="p-0 text-dark">Varick Slim Straight Distressed Jean</a><br>
+              </a>
+            </div>
           </div>
           <div class="col-lg-3 col-md-12 text-center">
           </div>
@@ -1149,7 +1194,7 @@
       </div>
     </section>
     <!-- recently veiw section  -->
-    
+
     <!-- footer section start  -->
     <footer>
       <hr>

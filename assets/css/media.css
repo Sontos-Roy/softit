@@ -85,6 +85,15 @@
     .wishlist-item-first{
         height: 77vh;
     }
+    .col-rev{
+        flex-direction: column-reverse;
+    }
+    .need-help{
+        margin-top: 30px;
+    }
+    .order-status{
+        margin-top: 30px;
+    }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -114,6 +123,9 @@
     }
     .ma5menu__panel>ul li:first-of-type{
         background-color: rgb(187, 187, 187) !important;
+    }
+    .icons ul li{
+        margin-right:20px;
     }
 
 }
@@ -150,9 +162,13 @@
     .search-wiget{
         top: 55px;
     }
+    .icons ul li{
+        margin-right:20px;
+    }
     .jquery-background-video{
         margin-top: -69px;
     }
+
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -162,6 +178,9 @@
     }
     .navbar .navbar-brand{
         font-size: 30px;
+    }
+    .icons ul li{
+        margin-right:20px;
     }
     .search-wiget{
         top: 62px;
@@ -183,6 +202,9 @@
         width: 70%;
         margin: 0 auto;
     }
+    .icons ul li{
+        margin-right:20px;
+    }
     #handbag-section{
         padding-top: 100px;
     }
@@ -196,6 +218,9 @@
     .font-xl{
         font-size: 48px;
         letter-spacing: 3px;
+    }
+    .icons ul li{
+        margin-right:25px;
     }
     .search-wiget .container{
         width: 70%;
