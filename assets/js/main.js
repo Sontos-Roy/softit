@@ -258,7 +258,7 @@ $(document).ready(function() {
 // });
 
 $(document).ready(function(){
-    $(".foryou, .wishlist").owlCarousel(
+    $(".foryou-inner").owlCarousel(
         {
             loop:true,
     margin:10,
@@ -275,6 +275,28 @@ $(document).ready(function(){
         1000:{
             items:4,
             nav:true,
+            loop:false
+        }
+    }
+        }
+    );
+    $(".wishlist-inner").owlCarousel(
+        {
+            loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:4,
+            nav:false,
             loop:false
         }
     }
@@ -326,3 +348,39 @@ $(document).ready(function(){
     );
 
   });
+
+//   aos 
+
+  AOS.init();
+
+//   aos 
+
+// magnific pop up 
+$(document).ready(function() {
+    $('.product-link-zoom').magnificPopup({
+        type:'image',
+        mainClass: 'mfp-with-zoom',
+        zoom: {
+            enabled: true, // By default it's false, so don't forget to enable it
+        
+            duration: 300,
+        }
+    });
+  });
+
+// magnificPopup 
+
+// Light zomm 
+$('.lightzoom').lightzoom({
+    glassSize   : 225,
+    zoomPower   : 1
+  });
+// Light zomm 
+
+// Selecting the iframe element
+var iframe = document.getElementById("myIframe");
+    
+// Adjusting the iframe height onload event
+iframe.onload = function(){
+    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+}

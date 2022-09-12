@@ -25,7 +25,10 @@
     <!-- Header Start  -->
     <header class="header" id="header">
 
-        <nav class="navbar navbar-expand-lg ps-3 pe-3" id="navbar">
+        <nav class="navbar navbar-expand-lg ps-3 pe-3" id="navbar"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500">
                 <div class="navbar-toggler ma5menu__toggle ps-1 pt-1">
                   <div class="bar1"></div>
                   <div class="bar2"></div>
@@ -684,15 +687,16 @@
                           <a href="signin.html" class="font-sm text-dark" style="text-decoration: underline;">Create An Account</a>
                         </div>
                         <form class="col-12">
-                          <div class="mb-3">
-                            <label for="email" class="form-label">Email address *</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required placeholder="Enter Email Here">
-                            <!-- <div id="emailHelp" class="form-text text-danger">* Email is Required</div> -->
+                          <div class="form-floating mb-3">
+                            <input type="email"
+                            class="col-12 form-control" name="email" id="email" aria-describedby="email" placeholder="Enter Email Here">
+                            <label for="email" class="form-label">Email</label>
+                            <small id="email" class="form-text text-muted">* Required Field</small>
                           </div>
-                          <div class="mb-3">
-                            <label for="password" class="form-label">Password *</label>
-                            <input type="email" class="form-control" id="password" aria-describedby="passwordhelp" required placeholder="Enter Password Here">
-                            <!-- <div id="passwordhelp" class="form-text">* Password is Required</div> -->
+                          <div class="form-floating mb-3">
+                            <input type="password" class="col-12 form-control" name="password" id="password" placeholder="Enter Password Here" aria-describedby="password">
+                            <label for="password" class="form-label">Password</label>
+                            <small id="password" class="form-text text-muted">* Required Field</small>
                           </div>
                           <div class="d-flex justify-content-between">
                             <a href="#" class="font-m-sm text-muted" style="text-decoration: underline;">Forgot Password</a>
@@ -905,7 +909,8 @@
           <li data-bs-target="#coversection" data-bs-slide-to="1"></li>
           <li data-bs-target="#coversection" data-bs-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner header-carousel">
+        <div class="carousel-inner header-carousel" data-aos="fade-up"
+        data-aos-duration="500">
           <div class="carousel-item active">
             <img src="assets/img/0823_hp_c07_img.jpg" class="d-none d-lg-block d-md-block w-100" alt="Product">
             <img src="assets/img/0906_hp_lux_takeover_m_c02_img.jpg" class="col-lg-none col-md-none d-block w-100" alt="Product">
@@ -950,7 +955,7 @@
     <section id="handbag-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7 col-md-6 col-12 handbag-left m-auto">
+          <div class="col-lg-7 col-md-6 col-12 handbag-left m-auto" data-aos="fade-up">
             <a href="#">
               <!-- <img src="assets/img/0816_hp_c02a_img.jpg" alt="Image" class="col-10"> -->
               <div class="video-block">
@@ -966,7 +971,7 @@
               <br>
             <a href="#" class="u-botton text-light border-light">Shop Now</a>
             </div>
-          <div class="col-lg-5 col-md-6 col-12 handbag-right">
+          <div class="col-lg-5 col-md-6 col-12 handbag-right" data-aos="fade-down" data-aos-duration="500">
             <h2 class="text-center serif">Polo ID Handbags</h2>
             <div id="handbagsection" class="carousel slide" data-bs-ride="carousel">
               <ol class="carousel-indicators">
@@ -1031,7 +1036,7 @@
     <!-- Header end  -->
     <!-- shop banner section start  -->
     <section class="mt-5">
-      <div class="container text-center m-auto">
+      <div class="container text-center m-auto" data-aos="">
         <a href="category.html" class="text-dark a-herf">
           <img src="assets/img/0906_hp_lux_takeover_c05_img.jpg" alt="product Picture" class="col-12 container" style="height: 100vh;">
         <div class=" text-center">
@@ -1060,9 +1065,9 @@
           </div>
 
 
-        <div class="category-grid" style="display: block;">
+        <div class="category-grid foryou" style="display: block;">
           <div class="d-lg-flex text-center justify-content-between p-2"><p>Our top shopping recommendations for you</p><a href="#" class="text-dark">Discover Our Personalized Shopping Experience</a></div>
-          <div class="row owl-carousel foryou">
+          <div class="row owl-carousel foryou-inner">
             <div class="product-div">
               <a href="category.html" class="s-product">
               <img src="assets/img/pic1.jpg" alt="Product" class="col-12 pb-4">
@@ -1086,7 +1091,7 @@
           </div>
         </div>
         <div class="category-grid wishlist" style="display: none;">
-          <div class="row owl-carousel wishlist">
+          <div class="owl-carousel wishlist-inner">
             <div class="product-div h-100">
               <div class="s-product text-center wishlist-item-first p-5">
                 <h3>Wishlist</h3>

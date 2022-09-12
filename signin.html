@@ -697,15 +697,16 @@
                         <a href="signin.html" class="font-sm text-dark" style="text-decoration: underline;">Create An Account</a>
                       </div>
                       <form class="col-12">
-                        <div class="mb-3">
-                          <label for="email" class="form-label">Email address *</label>
-                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required placeholder="Enter Email Here">
-                          <!-- <div id="emailHelp" class="form-text text-danger">* Email is Required</div> -->
+                        <div class="form-floating mb-3">
+                          <input type="email"
+                          class="col-12 form-control" name="email" id="email" aria-describedby="email" placeholder="Enter Email Here">
+                          <label for="email" class="form-label">Email</label>
+                          <small id="email" class="form-text text-muted">* Required Field</small>
                         </div>
-                        <div class="mb-3">
-                          <label for="password" class="form-label">Password *</label>
-                          <input type="email" class="form-control" id="password" aria-describedby="passwordhelp" required placeholder="Enter Password Here">
-                          <!-- <div id="passwordhelp" class="form-text">* Password is Required</div> -->
+                        <div class="form-floating mb-3">
+                          <input type="password" class="col-12 form-control" name="password" id="password" placeholder="Enter Password Here" aria-describedby="password">
+                          <label for="password" class="form-label">Password</label>
+                          <small id="password" class="form-text text-muted">* Required Field</small>
                         </div>
                         <div class="d-flex justify-content-between">
                           <a href="#" class="font-m-sm text-muted" style="text-decoration: underline;">Forgot Password</a>
@@ -976,15 +977,15 @@
                       <center><span style="background-color: white;">Or</span></center>
                       <hr>
                       <form action="">
-                        <div class="mb-3">
-                          <label for="email" class="form-label">Email</label>
+                        <div class="form-floating mb-3">
                           <input type="email"
-                            class="col-12 border p-2" name="email" id="Email" aria-describedby="email" placeholder="Enter Email Here">
+                          class="col-12 form-control" name="email" id="email" aria-describedby="email" placeholder="Enter Email Here">
+                          <label for="email" class="form-label">Email</label>
                           <small id="email" class="form-text text-muted">* Required Field</small>
                         </div>
-                        <div class="mb-3">
+                        <div class="form-floating mb-3">
+                          <input type="password" class="col-12 form-control" name="password" id="password" placeholder="Enter Password Here" aria-describedby="password">
                           <label for="password" class="form-label">Password</label>
-                          <input type="password" class="col-12 border p-2" name="password" id="password" placeholder="Enter Password Here" aria-describedby="password">
                           <small id="password" class="form-text text-muted">* Required Field</small>
                         </div>
                         <div class="d-flex justify-content-between">
@@ -992,8 +993,8 @@
                           <span class="text-muted font-m-sm">* Required</span>
                         </div>
                         <div class="mb-3 mt-3 form-check c-cursor">
-                          <input type="checkbox" class="form-check-input" id="check1"/>
-                          <label class="form-check-label text-muted" for="check1">Remember Me</label>
+                          <input type="checkbox" class="form-check-input" id="check"/>
+                          <label class="form-check-label text-muted" for="check">Remember Me</label>
                         </div>
                         <button class="p-3 border col-12 mt-2" style="background-color: #041e3a; color: white;">Sign In</button>
                       </form>
@@ -1012,33 +1013,32 @@
                       <center><span style="background-color: white;">Or</span></center>
                       <hr>
                       <form action="">
-                        <div class="mb-3">
-                          <label for="email" class="form-label">Email</label>
+                        <div class="form-floating mb-3">
                           <input type="email"
-                            class="col-12 border p-2" name="email" id="email" aria-describedby="email" placeholder="Enter Email Here">
+                          class="col-12 form-control" name="email" id="email" aria-describedby="email" placeholder="Enter Email Here">
+                          <label for="email" class="form-label">Email</label>
                           <small id="email" class="form-text text-muted">* Required Field</small>
                         </div>
-                        
-                        <div class="mb-3">
+                        <div class="form-floating mb-3">
+                          <input type="password" class="col-12 form-control" name="password" id="password" placeholder="Enter Password Here" aria-describedby="password">
                           <label for="password" class="form-label">Password</label>
-                          <input type="password" class="col-12 border p-2" name="password" id="password" placeholder="Enter Password Here" aria-describedby="password">
                           <small id="password" class="form-text text-muted">* Required Field</small>
                         </div>
-                        <div class="mb-3">
+                        <div class="form-floating mb-3">
+                          <input type="password" class="col-12 form-control" name="re_password" id="repassword" placeholder="Re-Enter Password Here" aria-describedby="password">
                           <label for="repassword" class="form-label">Confirm Password</label>
-                          <input type="password" class="col-12 border p-2" name="re_password" id="repassword" placeholder="Re-Enter Password Here" aria-describedby="password">
                           <small id="password" class="form-text text-muted">* Required Field</small>
                         </div>
-                        <div class="mb-3">
-                          <label for="f-name" class="form-label">First Name</label>
+                        <div class="form-floating mb-3">
                           <input type="text"
-                            class="col-12 border p-2" name="f_name" id="f-name" aria-describedby="f-name" placeholder="Enter First Name">
+                          class="col-12 form-control" name="f_name" id="f-name" aria-describedby="f-name" placeholder="Enter First Name">
+                          <label for="f-name" class="form-label">First Name</label>
                           <small id="f-name" class="form-text text-muted">* Required Field</small>
                         </div>
-                        <div class="mb-3">
-                          <label for="l-name" class="form-label">Last Name</label>
+                        <div class="form-floating mb-3">
                           <input type="text"
-                          class="col-12 border p-2" name="l_name" id="l-name" aria-describedby="l-name" placeholder="Enter Last Name">
+                          class="col-12 form-control p-2" name="l_name" id="l-name" aria-describedby="l-name" placeholder="Enter Last Name">
+                          <label for="l-name" class="form-label">Last Name</label>
                           <small id="l-name" class="form-text text-muted">* Required Field</small>
                         </div>
                         <div class="d-flex justify-content-between">
@@ -1046,21 +1046,21 @@
                           <span class="text-muted font-m-sm">* Required</span>
                         </div>
                         <div class="mb-3 mt-3 form-check c-cursor">
-                          <input type="checkbox" class="form-check-input" id="check1"/>
-                          <label class="form-check-label text-muted" for="check1">Remember Me</label>
+                          <input type="checkbox" class="form-check-input" id="check3"/>
+                          <label class="form-check-label text-muted" for="check3">Remember Me</label>
                         </div>
                         <div class="mb-3 mt-3 form-check c-cursor">
-                          <input type="checkbox" class="form-check-input" id="check1"/>
-                          <label class="form-check-label text-muted" for="check1"><span class="font-sm">Subscribe me to receive email updates. Ralph Lauren does not share or sell personal information</span></label>
+                          <input type="checkbox" class="form-check-input" id="check2"/>
+                          <label class="form-check-label text-muted" for="check2"><span class="font-sm">Subscribe me to receive email updates. Ralph Lauren does not share or sell personal information</span></label>
                         </div>
-                        <a href="#" class="font-sm text-dark">See Privacy Policy</a>
+                        <a href="#" class="font-sm text-dark" data-bs-toggle="modal" data-bs-target="#policy">See Privacy Policy</a>
                         <button class="p-3 border col-12 mt-2" style="background-color: #041e3a; color: white;">Create Account</button>
                         
                       </form>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-12">
+                <div class="col-lg-4 col-md-12 col-12 pt-lg-0 pt-3 Tracking">
                   <div class="card order-status border-0 text-center p-3 pt-4" style="background-color: rgb(230, 230, 230);border-radius: 0;">
                     <h6>CHECK ORDER STATUS</h6>
                     <p class="p-3 font-sm">See your order even if you are not a registered user. Enter the order number and the billing address ZIP code.</p>
@@ -1085,6 +1085,61 @@
                   </div>
                   
                 </div>
+                <div class="col-lg-4 col-md-12 col-12 pt-lg-0 pt-3 benefit" style="display: none;">
+                  <h5>BENEFITS OF CREATING AN ACCOUNT</h5>
+                  <p class="font-m-sm "><b>
+                    Enjoy Free Fast Shipping <i class="fas fa-truck-fast"></i> <a href="#" class="text-dark" data-bs-toggle="modal" data-bs-target="#details">
+                      Details
+                    </a>
+                  </b></p>
+                  <!-- Modal -->
+                  <div class="modal fade" id="details" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="modalTitleId">Details</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                        </div>
+                        <div class="modal-body" style="max-height: 10rem; overflow-y: scroll;">
+                            <p class="text-justify">
+                              Enjoy free Fast shipping on orders made using a RalphLauren.com account. Enjoy free returns within 30 days of the order ship date. See our returns policy for details and exclusions. The free Fast shipping offer is automatically applied at checkout when Fast shipping is selected after signing in to your account on RalphLauren.com or on The Ralph Lauren App. Orders typically arrive within four business days if placed by 3 PM ET (11 AM ET for orders containing customized items). Your estimated delivery date will be provided at checkout. Orders containing fragrances, rugs, or lighting and orders greater than 30 units are not eligible for Fast shipping. Regular charges will apply to all other shipping methods. Any philanthropic donations added at checkout do not count toward the minimum purchase amount. This offer has no cash value. This offer is not applicable to purchases being shipped internationally. Ralph Lauren reserves the right to end or modify any free shipping offers at any time.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="font-m-sm">
+                    <b>
+                      Simplified Returns Process
+                    </b>
+                  </p>
+                  <p class="font-m-sm">
+                    <b>
+                      Receive Exclusive Offers & News
+                    </b>
+                  </p>
+                  <p class="font-m-sm">
+                    <b>
+                      Easy Access to Order Tracking & History
+                    </b>
+                  </p>
+                  <p class="font-m-sm">
+                    <b>
+                      Faster Shopping & Checkout
+                    </b>
+                  </p>
+                  <a href="#" class="font-m-sm h-u text-dark">
+                    Read more about security
+                  </a>
+                  
+                  
+                  
+                  
+                </div>
+                
               </div>
             </div>
             <br>
@@ -1092,6 +1147,44 @@
     </section>
     <script src="assets/js/signin.js"></script>
     <!-- cover end  -->
+
+
+
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="policy" tabindex="-1" role="dialog" aria-labelledby="Privacy" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Privacy">Privacy Policy</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <iframe src="assets/privecy_policy.txt" id="myIframe" frameborder="0" style="width: 100%;height: 80vh;border:3px solid black; background-color: white; color: black;"></iframe>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      var modalId = document.getElementById('modalId');
+    
+      modalId.addEventListener('show.bs.modal', function (event) {
+          // Button that triggered the modal
+          let button = event.relatedTarget;
+          // Extract info from data-bs-* attributes
+          let recipient = button.getAttribute('data-bs-whatever');
+    
+        // Use above variables to manipulate the DOM
+      });
+    </script>
+    
 
 
     <!-- footer section start  -->

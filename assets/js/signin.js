@@ -4,11 +4,16 @@ $(document).ready(function(){
         $(".signup-body").fadeOut('fast');
         $(".signin-tab").addClass("tab-active");
         $(".signup-tab").removeClass("tab-active");
+        $(".Tracking").fadeIn("fast");
+        $(".benefit").fadeOut("fast");
+
     }); 
     $(".signup-tab").click(function(){
         $(".signin-tab").removeClass("tab-active");
         $(".signup-tab").addClass("tab-active");
         $(".signin-body").fadeOut('fast');
-        $(".signup-body").fadeIn('fast');
+        $(".signup-body").fadeIn('fast');        
+        $(".Tracking").fadeOut("fast");
+        $(".benefit").fadeIn("fast");
     }); 
 });
