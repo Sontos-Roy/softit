@@ -187,12 +187,13 @@ $(document).ready(function() {
         function() {
             $('.search-wiget').stop(true).slideToggle('medium');
         }
-    );
+    );  
     $("#filter").click(
         function() {
             $('.filter-wiget').stop(true).slideToggle('medium');
         }
     );
+    
 });
 
 
