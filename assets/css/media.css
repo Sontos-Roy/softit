@@ -20,6 +20,9 @@
     .ma5menu__container{
         top: 58px;
     }
+    #forwhitebg .navbar-toggler .bar{
+        background-color: black;
+    }
 
     #banner{
         margin-top: -85px !important;

@@ -15,4 +15,7 @@ $(document).ready(function(){
         $(".via_card_box").slideUp("fast");
         $(".paypal_box").slideUp("fast");
     });
+    $(".cuppon").click(function(){
+        $(".cuppon-input").slideToggle("fast");
+    })
 });

@@ -34,14 +34,14 @@
     </style>
 </head>
 <body>
-
+<div class="main-wrapper container-fluid">
     <!-- Header Start  -->
-    <header class="header" id="header">
+    <header class="header container-fluid p-0 sticky-top" id="header">
 
       <nav class="navbar navbar-expand-lg ps-3 pe-3" id="forwhitebg">
               <div class="navbar-toggler ma5menu__toggle ps-1 pt-1">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
+                <div class="bar1 bar"></div>
+                <div class="bar2 bar"></div>
                 <div style="display: none;">
 
                   <!-- source for mobile menu start -->
@@ -275,7 +275,7 @@
                   <!-- source for mobile menu footer end -->
               </div>
               </div>
-              <a class="navbar-brand p-0 m-0 serif" href="index.html">Ralph Lauren</a>
+              <a class="navbar-brand ps-2 m-0 serif" href="index.html">Ralph Lauren</a>
             <div class="collapse navbar-collapse" id="sidebar">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                <!-- <li class="nav-item row" id="men-hover">
@@ -684,7 +684,7 @@
 
             </div>
             <div class="icons">
-              <ul class="d-flex align-items-center pe-1">
+              <ul class="d-flex align-items-center pe-1 ps-0">
                 <li class="nav-link"><a href="#_" class="white search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li class="nav-link d-lg-block d-md-none d-none">
                   <a href="#" class="white "><i class="fa-regular fa-heart"></i></a></li>
@@ -913,8 +913,8 @@
     <!-- Header end  -->
 
     <!-- cover start  -->
-    <section class="mt-5 pt-5">
-        <div class="container mt-3">
+    <section class="">
+        <div class="container mt-5">
             <div class="row">
                 <div class="col-lg-8 col-md-12 col-12">
 
@@ -1130,7 +1130,13 @@
                                     </b></p>
                                     <p><b>$250</b></p>
                             </div>
-                            <p class="font-sm">Apply Promo Code <i class="fas fa-chevron-down"></i></p>
+                            <p class="font-sm c-cursor cuppon" style="display: inline;">Apply Promo Code <i class="fas fa-chevron-down"></i></p>
+                            <div class="form-floating mb-3 cuppon-input" style="display: none;">
+                              <input
+                                type="text"
+                                class="form-control" name="Label" id="Label" placeholder="Appy Cuppon">
+                              <label for="floatingLabel">Apply Cuppon</label>
+                            </div>
                             <div class="p-2">
                                 <hr>
                             </div>
@@ -1245,24 +1251,8 @@
               </ul>
             </div>
           </div>
-          <!-- <div class="mt-2 col-lg-3 col-md-12 col-12 border border-start-0 border-top-0 border-bottom-0">
-            <div id="customer-assistent" class="customer-assistent">
-
-              <ul style="list-style: none; padding: 10px;">
-                <li class="text-cap pb-3"><h6><b>SIGN UP FOR EMAILS</b></h6></li>
-                <li>
-                  <div class="input-group">
-                    <input type="text" class="form-control p-3" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="subscribe" style="border-radius: 0; outline: none;">
-                    <button class="btn btn-outline-secondary p-3" type="button" id="subscribe" style="border-radius: 0;background-color: #041e3a; color: white;">Button</button>
-                  </div>
-                  <small id="subscribe" class="form-text text-muted" >Help text</small>
-                </li>
-                <li class="font-sm pt-3">
-                  <a href="#" class="text-dark">Click here</a> to read Ralph Lauren's privacy notice. Or <a href="#" class="text-dark"> contact us.</a>
-                </li>
-              </ul>
-            </div>
-          </div> -->
+         
+           
         </div>
       </div>
       <hr>
@@ -1283,6 +1273,7 @@
       </div>
     </footer>
     <!-- footer section end  -->
+</div>
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/foryou.js"></script>
