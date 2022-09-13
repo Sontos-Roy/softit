@@ -45,3 +45,19 @@
     src: url(https://cdn-fsly.yottaa.net/5e18d625d9314057054ee33e/www.ralphlauren.com/v~4b.60/on/demandware.static/-/Sites-RalphLauren_US-Library/en_US/v1660990061687/_common/fonts/df-refresh/Fonts/LeJeuneDeck-RegularItalic-Web.woff?yocs=1_) format("woff"), url(https://cdn-fsly.yottaa.net/5e18d625d9314057054ee33e/www.ralphlauren.com/v~4b.60/on/demandware.static/-/Sites-RalphLauren_US-Library/en_US/v1660990061687/_common/fonts/df-refresh/Fonts/LeJeuneDeck-RegularItalic-Web.woff2?yocs=1_) format("woff2");
     font-display: swap;
 }
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: josefinsans;
+    src: url(../fonts/JosefinSans-Regular.ttf);
+}
+@font-face {
+    font-family: popin;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}

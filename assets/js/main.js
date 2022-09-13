@@ -116,7 +116,7 @@ function toggleSound() {
     });
 });
 $(document).ready(function(){
-    $("#forwhitebg .bar1,#forwhitebg .bar2").css(
+    $("#forwhitebg .bar1, #forwhitebg .bar2").css(
         'background-color', 'black'
     );
     $('.navbar').click(function(){
@@ -378,10 +378,11 @@ $('.lightzoom').lightzoom({
   });
 // Light zomm 
 
-// Selecting the iframe element
-var iframe = document.getElementById("myIframe");
+// // Selecting the iframe element
+// var iframe = document.getElementById("myIframe");
     
-// Adjusting the iframe height onload event
-iframe.onload = function(){
-    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-}
+// // Adjusting the iframe height onload event
+// iframe.onload = function(){
+//     iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+// }
+

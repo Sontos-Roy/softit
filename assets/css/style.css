@@ -11,6 +11,10 @@
     --lejeuneDeck-Light: LeJeuneDeck-Light;
     --lejeuneDeck-Regular: LeJeuneDeck-Regular;
     --lejeuneDeck-Regular-Italic: LeJeuneDeck-Regular-Italic;
+    --montserrat: montserrat;
+    --popin: popin;
+    --josefinsans: josefinsans;
+    --roboto: roboto;
 
     /* Fonts End  */
 
@@ -125,7 +129,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: var(--founders-regular);
+    font-family: var(--josefinsans);
     overflow-x: hidden;
 }
 /* Header Start  */

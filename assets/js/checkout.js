@@ -1,0 +1,18 @@
+$(document).ready(function(){
+    $(".via_card2").click(function(){
+        $(".via_card_box").slideDown("fast");
+        $(".paypal_box").slideUp("fast");
+    });
+    $("#debitorcredit").click(function(){
+        $(".via_card_box").slideDown("fast");
+        $(".paypal_box").slideUp("fast");
+    });
+    $(".via_paypal").click(function(){
+        $(".via_card_box").slideUp("fast");
+        $(".paypal_box").slideDown("fast");
+    });
+    $(".case_on_delivery2").click(function(){
+        $(".via_card_box").slideUp("fast");
+        $(".paypal_box").slideUp("fast");
+    });
+});
